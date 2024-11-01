@@ -32,6 +32,7 @@ extern gpio_t *GPIO_USING ;
 extern uint8_t ir_pin ;
 extern uint8_t Signal_LED;
 uint8_t count=0;
+gpio_level_t last_ir_state;
 bool connection_state =false;
 #ifndef ACTIVE_REGION
 
@@ -44,7 +45,7 @@ bool connection_state =false;
 /*!
  * Defines the application data transmission duty cycle. 5s, value in [ms].
  */
-#define APP_TX_DUTYCYCLE                            4000
+#define APP_TX_DUTYCYCLE                            2000
 
 /*!
  * Defines a random delay for application data transmission duty cycle. 1s,
@@ -141,7 +142,7 @@ static enum eDeviceState
 /*!
  * \brief   Prepares the payload of the frame
  */
-static void PrepareTxFrame( uint8_t port )
+static void PrepareTxFrame( uint8_t port ,gpio_level_t something)
 {
     AppDataSize = 6;
     AppData[0] = 'S';
@@ -149,7 +150,8 @@ static void PrepareTxFrame( uint8_t port )
     AppData[2] = 'O';
     AppData[3] = 'T';
     AppData[4] = '1';
-    AppData[5] = (gpio_read(GPIO_USING,ir_pin)==1)?'1':'0';
+    AppData[5] = (something==1)?'1':'0';
+    printf(" preparetxframe %d",something);
 }
 
 /*!
@@ -295,11 +297,19 @@ static void McpsIndication( McpsIndication_t *mcpsIndication )
         return;
    }
    count++;
-
+    printf (" last ir state %d \n" , last_ir_state);
+ if (last_ir_state!= gpio_read(GPIO_USING,ir_pin))
+    {
+        count=1;
+        printf(" count =1 \n");
+    }
 
    if(count==2)
     {interrupt_flag=0;
     count=0;}
+
+
+   
     
 gpio_write(GPIO_USING,Signal_LED,GPIO_LEVEL_HIGH);
         connection_state=true;
@@ -568,12 +578,12 @@ int app_start( void )
             {
                 if( (NextTx == true && interrupt_flag==1)  )
                 { 
-                      
-                    PrepareTxFrame( AppPort );
-
+                      last_ir_state=gpio_read(GPIO_USING,ir_pin);
+                    PrepareTxFrame( AppPort ,last_ir_state);
+                    printf(" last_ir_State in device state send %d",last_ir_state);
                     NextTx = SendFrame( );
                     
-
+                    
                 }
                 
                 // Schedule next packet transmission

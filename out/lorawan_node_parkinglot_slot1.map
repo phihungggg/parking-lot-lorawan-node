@@ -1125,7 +1125,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000d4                . = ALIGN (0x4)
 
-.text           0x00000000080000d8     0x9348
+.text           0x00000000080000d8     0x9368
                 0x00000000080000d8                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000d8       0x88 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1257,1039 +1257,1039 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
  .text.MlmeIndication
                 0x0000000008001774        0xc out/classA.o
  .text.McpsIndication
-                0x0000000008001780       0xa8 out/classA.o
+                0x0000000008001780       0xc0 out/classA.o
  .text.app_start
-                0x0000000008001828      0x228 out/classA.o
-                0x0000000008001828                app_start
+                0x0000000008001840      0x22c out/classA.o
+                0x0000000008001840                app_start
  .text.uart_log_init
-                0x0000000008001a50       0x40 out/main.o
-                0x0000000008001a50                uart_log_init
+                0x0000000008001a6c       0x40 out/main.o
+                0x0000000008001a6c                uart_log_init
  .text.interrupt_configuration
-                0x0000000008001a90       0x30 out/main.o
-                0x0000000008001a90                interrupt_configuration
+                0x0000000008001aac       0x30 out/main.o
+                0x0000000008001aac                interrupt_configuration
  .text.board_init
-                0x0000000008001ac0       0x88 out/main.o
-                0x0000000008001ac0                board_init
+                0x0000000008001adc       0x88 out/main.o
+                0x0000000008001adc                board_init
  .text.startup.main
-                0x0000000008001b48        0xe out/main.o
-                0x0000000008001b48                main
+                0x0000000008001b64        0xe out/main.o
+                0x0000000008001b64                main
  .text._out_null
-                0x0000000008001b56        0x2 out/printf-stdarg.o
+                0x0000000008001b72        0x2 out/printf-stdarg.o
  .text._out_rev
-                0x0000000008001b58       0x96 out/printf-stdarg.o
+                0x0000000008001b74       0x96 out/printf-stdarg.o
  .text._ntoa_format
-                0x0000000008001bee      0x10a out/printf-stdarg.o
+                0x0000000008001c0a      0x10a out/printf-stdarg.o
  .text._ntoa_long
-                0x0000000008001cf8       0x82 out/printf-stdarg.o
+                0x0000000008001d14       0x82 out/printf-stdarg.o
  .text._ntoa_long_long
-                0x0000000008001d7a       0xa6 out/printf-stdarg.o
+                0x0000000008001d96       0xa6 out/printf-stdarg.o
  .text._out_char
-                0x0000000008001e20       0x10 out/printf-stdarg.o
- .text._ftoa    0x0000000008001e30      0x32c out/printf-stdarg.o
- *fill*         0x000000000800215c        0x4 
- .text._etoa    0x0000000008002160      0x3b8 out/printf-stdarg.o
+                0x0000000008001e3c       0x10 out/printf-stdarg.o
+ *fill*         0x0000000008001e4c        0x4 
+ .text._ftoa    0x0000000008001e50      0x32c out/printf-stdarg.o
+ *fill*         0x000000000800217c        0x4 
+ .text._etoa    0x0000000008002180      0x3b8 out/printf-stdarg.o
  .text._vsnprintf
-                0x0000000008002518      0x550 out/printf-stdarg.o
+                0x0000000008002538      0x550 out/printf-stdarg.o
  .text.__wrap_printf
-                0x0000000008002a68       0x28 out/printf-stdarg.o
-                0x0000000008002a68                __wrap_printf
+                0x0000000008002a88       0x28 out/printf-stdarg.o
+                0x0000000008002a88                __wrap_printf
  .text.nvic_init
-                0x0000000008002a90       0x24 out/system_cm4.o
-                0x0000000008002a90                nvic_init
+                0x0000000008002ab0       0x24 out/system_cm4.o
+                0x0000000008002ab0                nvic_init
  .text.system_init
-                0x0000000008002ab4       0x44 out/system_cm4.o
-                0x0000000008002ab4                system_init
+                0x0000000008002ad4       0x44 out/system_cm4.o
+                0x0000000008002ad4                system_init
  .text.uart_send_data
-                0x0000000008002af8        0xa out/tremo_uart.o
-                0x0000000008002af8                uart_send_data
+                0x0000000008002b18        0xa out/tremo_uart.o
+                0x0000000008002b18                uart_send_data
  .text.uart_config_init
-                0x0000000008002b02       0x16 out/tremo_uart.o
-                0x0000000008002b02                uart_config_init
+                0x0000000008002b22       0x16 out/tremo_uart.o
+                0x0000000008002b22                uart_config_init
  .text.uart_cmd
-                0x0000000008002b18       0x12 out/tremo_uart.o
-                0x0000000008002b18                uart_cmd
- *fill*         0x0000000008002b2a        0x2 
+                0x0000000008002b38       0x12 out/tremo_uart.o
+                0x0000000008002b38                uart_cmd
+ *fill*         0x0000000008002b4a        0x2 
  .text.uart_init
-                0x0000000008002b2c      0x140 out/tremo_uart.o
-                0x0000000008002b2c                uart_init
+                0x0000000008002b4c      0x140 out/tremo_uart.o
+                0x0000000008002b4c                uart_init
  .text.gpio_init
-                0x0000000008002c6c      0x124 out/tremo_gpio.o
-                0x0000000008002c6c                gpio_init
+                0x0000000008002c8c      0x124 out/tremo_gpio.o
+                0x0000000008002c8c                gpio_init
  .text.gpio_write
-                0x0000000008002d90       0xb4 out/tremo_gpio.o
-                0x0000000008002d90                gpio_write
+                0x0000000008002db0       0xb4 out/tremo_gpio.o
+                0x0000000008002db0                gpio_write
  .text.gpio_read
-                0x0000000008002e44       0x12 out/tremo_gpio.o
-                0x0000000008002e44                gpio_read
+                0x0000000008002e64       0x12 out/tremo_gpio.o
+                0x0000000008002e64                gpio_read
  .text.gpio_toggle
-                0x0000000008002e56        0xe out/tremo_gpio.o
-                0x0000000008002e56                gpio_toggle
+                0x0000000008002e76        0xe out/tremo_gpio.o
+                0x0000000008002e76                gpio_toggle
  .text.gpio_clear_interrupt
-                0x0000000008002e64       0x10 out/tremo_gpio.o
-                0x0000000008002e64                gpio_clear_interrupt
+                0x0000000008002e84       0x10 out/tremo_gpio.o
+                0x0000000008002e84                gpio_clear_interrupt
  .text.gpio_config_interrupt
-                0x0000000008002e74       0x20 out/tremo_gpio.o
-                0x0000000008002e74                gpio_config_interrupt
+                0x0000000008002e94       0x20 out/tremo_gpio.o
+                0x0000000008002e94                gpio_config_interrupt
  .text.gpio_get_interrupt_status
-                0x0000000008002e94       0x14 out/tremo_gpio.o
-                0x0000000008002e94                gpio_get_interrupt_status
+                0x0000000008002eb4       0x14 out/tremo_gpio.o
+                0x0000000008002eb4                gpio_get_interrupt_status
  .text.gpio_set_iomux
-                0x0000000008002ea8       0x40 out/tremo_gpio.o
-                0x0000000008002ea8                gpio_set_iomux
+                0x0000000008002ec8       0x40 out/tremo_gpio.o
+                0x0000000008002ec8                gpio_set_iomux
  .text.delay_init
-                0x0000000008002ee8       0x48 out/tremo_delay.o
-                0x0000000008002ee8                delay_init
+                0x0000000008002f08       0x48 out/tremo_delay.o
+                0x0000000008002f08                delay_init
  .text.delay_us
-                0x0000000008002f30       0x30 out/tremo_delay.o
-                0x0000000008002f30                delay_us
+                0x0000000008002f50       0x30 out/tremo_delay.o
+                0x0000000008002f50                delay_us
  .text.delay_ms
-                0x0000000008002f60        0xa out/tremo_delay.o
-                0x0000000008002f60                delay_ms
+                0x0000000008002f80        0xa out/tremo_delay.o
+                0x0000000008002f80                delay_ms
  .text.rtc_deinit
-                0x0000000008002f6a       0x1e out/tremo_rtc.o
-                0x0000000008002f6a                rtc_deinit
+                0x0000000008002f8a       0x1e out/tremo_rtc.o
+                0x0000000008002f8a                rtc_deinit
  .text.rtc_check_syn
-                0x0000000008002f88       0x14 out/tremo_rtc.o
-                0x0000000008002f88                rtc_check_syn
+                0x0000000008002fa8       0x14 out/tremo_rtc.o
+                0x0000000008002fa8                rtc_check_syn
  .text.rtc_calendar_cmd
-                0x0000000008002f9c       0x20 out/tremo_rtc.o
-                0x0000000008002f9c                rtc_calendar_cmd
- .text.rtc_cyc_cmd
                 0x0000000008002fbc       0x20 out/tremo_rtc.o
-                0x0000000008002fbc                rtc_cyc_cmd
+                0x0000000008002fbc                rtc_calendar_cmd
+ .text.rtc_cyc_cmd
+                0x0000000008002fdc       0x20 out/tremo_rtc.o
+                0x0000000008002fdc                rtc_cyc_cmd
  .text.rtc_config_cyc_wakeup
-                0x0000000008002fdc       0x24 out/tremo_rtc.o
-                0x0000000008002fdc                rtc_config_cyc_wakeup
+                0x0000000008002ffc       0x24 out/tremo_rtc.o
+                0x0000000008002ffc                rtc_config_cyc_wakeup
  .text.rtc_get_calendar
-                0x0000000008003000       0xdc out/tremo_rtc.o
-                0x0000000008003000                rtc_get_calendar
+                0x0000000008003020       0xdc out/tremo_rtc.o
+                0x0000000008003020                rtc_get_calendar
  .text.rtc_set_status
-                0x00000000080030dc       0x30 out/tremo_rtc.o
-                0x00000000080030dc                rtc_set_status
+                0x00000000080030fc       0x30 out/tremo_rtc.o
+                0x00000000080030fc                rtc_set_status
  .text.rtc_get_status
-                0x000000000800310c       0x38 out/tremo_rtc.o
-                0x000000000800310c                rtc_get_status
+                0x000000000800312c       0x38 out/tremo_rtc.o
+                0x000000000800312c                rtc_get_status
  .text.rtc_config_interrupt
-                0x0000000008003144       0x38 out/tremo_rtc.o
-                0x0000000008003144                rtc_config_interrupt
+                0x0000000008003164       0x38 out/tremo_rtc.o
+                0x0000000008003164                rtc_config_interrupt
  .text.rtc_config_cyc_max
-                0x000000000800317c       0x14 out/tremo_rtc.o
-                0x000000000800317c                rtc_config_cyc_max
+                0x000000000800319c       0x14 out/tremo_rtc.o
+                0x000000000800319c                rtc_config_cyc_max
  .text.pwr_xo32k_lpm_cmd
-                0x0000000008003190       0x18 out/tremo_pwr.o
-                0x0000000008003190                pwr_xo32k_lpm_cmd
+                0x00000000080031b0       0x18 out/tremo_pwr.o
+                0x00000000080031b0                pwr_xo32k_lpm_cmd
  .text.rcc_get_clk_freq
-                0x00000000080031a8       0x9c out/tremo_rcc.o
-                0x00000000080031a8                rcc_get_clk_freq
+                0x00000000080031c8       0x9c out/tremo_rcc.o
+                0x00000000080031c8                rcc_get_clk_freq
  .text.rcc_get_uart0_clk_source
-                0x0000000008003244        0xc out/tremo_rcc.o
-                0x0000000008003244                rcc_get_uart0_clk_source
+                0x0000000008003264        0xc out/tremo_rcc.o
+                0x0000000008003264                rcc_get_uart0_clk_source
  .text.rcc_get_uart1_clk_source
-                0x0000000008003250        0xc out/tremo_rcc.o
-                0x0000000008003250                rcc_get_uart1_clk_source
+                0x0000000008003270        0xc out/tremo_rcc.o
+                0x0000000008003270                rcc_get_uart1_clk_source
  .text.rcc_get_uart2_clk_source
-                0x000000000800325c        0xc out/tremo_rcc.o
-                0x000000000800325c                rcc_get_uart2_clk_source
+                0x000000000800327c        0xc out/tremo_rcc.o
+                0x000000000800327c                rcc_get_uart2_clk_source
  .text.rcc_get_uart3_clk_source
-                0x0000000008003268        0xc out/tremo_rcc.o
-                0x0000000008003268                rcc_get_uart3_clk_source
+                0x0000000008003288        0xc out/tremo_rcc.o
+                0x0000000008003288                rcc_get_uart3_clk_source
  .text.rcc_get_rtc_clk_source
-                0x0000000008003274        0xc out/tremo_rcc.o
-                0x0000000008003274                rcc_get_rtc_clk_source
+                0x0000000008003294        0xc out/tremo_rcc.o
+                0x0000000008003294                rcc_get_rtc_clk_source
  .text.rcc_enable_peripheral_clk
-                0x0000000008003280      0x4b4 out/tremo_rcc.o
-                0x0000000008003280                rcc_enable_peripheral_clk
+                0x00000000080032a0      0x4b4 out/tremo_rcc.o
+                0x00000000080032a0                rcc_enable_peripheral_clk
  .text.rcc_enable_oscillator
-                0x0000000008003734       0xfc out/tremo_rcc.o
-                0x0000000008003734                rcc_enable_oscillator
+                0x0000000008003754       0xfc out/tremo_rcc.o
+                0x0000000008003754                rcc_enable_oscillator
  .text.rcc_rst_peripheral
-                0x0000000008003830       0x4a out/tremo_rcc.o
-                0x0000000008003830                rcc_rst_peripheral
- .text.DelayMs  0x000000000800387a        0x4 out/delay.o
-                0x000000000800387a                DelayMs
- *fill*         0x000000000800387e        0x2 
+                0x0000000008003850       0x4a out/tremo_rcc.o
+                0x0000000008003850                rcc_rst_peripheral
+ .text.DelayMs  0x000000000800389a        0x4 out/delay.o
+                0x000000000800389a                DelayMs
+ *fill*         0x000000000800389e        0x2 
  .text.TimeStampsUpdate
-                0x0000000008003880       0x2c out/timer.o
+                0x00000000080038a0       0x2c out/timer.o
  .text.TimerInsertNewHeadTimer
-                0x00000000080038ac       0x1c out/timer.o
+                0x00000000080038cc       0x1c out/timer.o
  .text.TimerSetSysTime
-                0x00000000080038c8       0x30 out/timer.o
-                0x00000000080038c8                TimerSetSysTime
+                0x00000000080038e8       0x30 out/timer.o
+                0x00000000080038e8                TimerSetSysTime
  .text.TimerInit
-                0x00000000080038f8        0xe out/timer.o
-                0x00000000080038f8                TimerInit
- *fill*         0x0000000008003906        0x2 
+                0x0000000008003918        0xe out/timer.o
+                0x0000000008003918                TimerInit
+ *fill*         0x0000000008003926        0x2 
  .text.TimerStart
-                0x0000000008003908       0x78 out/timer.o
-                0x0000000008003908                TimerStart
+                0x0000000008003928       0x78 out/timer.o
+                0x0000000008003928                TimerStart
  .text.TimerIrqHandler
-                0x0000000008003980       0x68 out/timer.o
-                0x0000000008003980                TimerIrqHandler
+                0x00000000080039a0       0x68 out/timer.o
+                0x00000000080039a0                TimerIrqHandler
  .text.TimerStop
-                0x00000000080039e8       0x60 out/timer.o
-                0x00000000080039e8                TimerStop
+                0x0000000008003a08       0x60 out/timer.o
+                0x0000000008003a08                TimerStop
  .text.TimerSetValue
-                0x0000000008003a48       0x10 out/timer.o
-                0x0000000008003a48                TimerSetValue
+                0x0000000008003a68       0x10 out/timer.o
+                0x0000000008003a68                TimerSetValue
  .text.TimerGetCurrentTime
-                0x0000000008003a58       0x18 out/timer.o
-                0x0000000008003a58                TimerGetCurrentTime
+                0x0000000008003a78       0x18 out/timer.o
+                0x0000000008003a78                TimerGetCurrentTime
  .text.TimerGetSysTime
-                0x0000000008003a70       0x2c out/timer.o
-                0x0000000008003a70                TimerGetSysTime
+                0x0000000008003a90       0x2c out/timer.o
+                0x0000000008003a90                TimerGetSysTime
  .text.TimerGetElapsedTime
-                0x0000000008003a9c       0x12 out/timer.o
-                0x0000000008003a9c                TimerGetElapsedTime
+                0x0000000008003abc       0x12 out/timer.o
+                0x0000000008003abc                TimerGetElapsedTime
  .text.AES_CMAC_Init
-                0x0000000008003aae       0x14 out/cmac.o
-                0x0000000008003aae                AES_CMAC_Init
+                0x0000000008003ace       0x14 out/cmac.o
+                0x0000000008003ace                AES_CMAC_Init
  .text.AES_CMAC_SetKey
-                0x0000000008003ac2        0xc out/cmac.o
-                0x0000000008003ac2                AES_CMAC_SetKey
+                0x0000000008003ae2        0xc out/cmac.o
+                0x0000000008003ae2                AES_CMAC_SetKey
  .text.AES_CMAC_Update
-                0x0000000008003ace       0xb0 out/cmac.o
-                0x0000000008003ace                AES_CMAC_Update
+                0x0000000008003aee       0xb0 out/cmac.o
+                0x0000000008003aee                AES_CMAC_Update
  .text.AES_CMAC_Final
-                0x0000000008003b7e      0x15e out/cmac.o
-                0x0000000008003b7e                AES_CMAC_Final
+                0x0000000008003b9e      0x15e out/cmac.o
+                0x0000000008003b9e                AES_CMAC_Final
  .text.RadioCheckRfFrequency
-                0x0000000008003cdc        0x4 out/radio.o
-                0x0000000008003cdc                RadioCheckRfFrequency
+                0x0000000008003cfc        0x4 out/radio.o
+                0x0000000008003cfc                RadioCheckRfFrequency
  .text.RadioOnTxTimeoutIrq
-                0x0000000008003ce0       0x14 out/radio.o
-                0x0000000008003ce0                RadioOnTxTimeoutIrq
+                0x0000000008003d00       0x14 out/radio.o
+                0x0000000008003d00                RadioOnTxTimeoutIrq
  .text.RadioOnRxTimeoutIrq
-                0x0000000008003cf4       0x14 out/radio.o
-                0x0000000008003cf4                RadioOnRxTimeoutIrq
+                0x0000000008003d14       0x14 out/radio.o
+                0x0000000008003d14                RadioOnRxTimeoutIrq
  .text.RadioStandby
-                0x0000000008003d08        0x6 out/radio.o
-                0x0000000008003d08                RadioStandby
- *fill*         0x0000000008003d0e        0x2 
+                0x0000000008003d28        0x6 out/radio.o
+                0x0000000008003d28                RadioStandby
+ *fill*         0x0000000008003d2e        0x2 
  .text.RadioInit
-                0x0000000008003d10       0x6c out/radio.o
-                0x0000000008003d10                RadioInit
+                0x0000000008003d30       0x6c out/radio.o
+                0x0000000008003d30                RadioInit
  .text.RadioGetStatus
-                0x0000000008003d7c       0x18 out/radio.o
-                0x0000000008003d7c                RadioGetStatus
+                0x0000000008003d9c       0x18 out/radio.o
+                0x0000000008003d9c                RadioGetStatus
  .text.RadioSetChannel
-                0x0000000008003d94        0x4 out/radio.o
-                0x0000000008003d94                RadioSetChannel
+                0x0000000008003db4        0x4 out/radio.o
+                0x0000000008003db4                RadioSetChannel
  .text.RadioRssi
-                0x0000000008003d98        0xa out/radio.o
-                0x0000000008003d98                RadioRssi
+                0x0000000008003db8        0xa out/radio.o
+                0x0000000008003db8                RadioRssi
  .text.RadioRead
-                0x0000000008003da2        0x4 out/radio.o
-                0x0000000008003da2                RadioRead
+                0x0000000008003dc2        0x4 out/radio.o
+                0x0000000008003dc2                RadioRead
  .text.RadioWrite
-                0x0000000008003da6        0x4 out/radio.o
-                0x0000000008003da6                RadioWrite
- *fill*         0x0000000008003daa        0x2 
+                0x0000000008003dc6        0x4 out/radio.o
+                0x0000000008003dc6                RadioWrite
+ *fill*         0x0000000008003dca        0x2 
  .text.RadioSend
-                0x0000000008003dac       0x54 out/radio.o
-                0x0000000008003dac                RadioSend
+                0x0000000008003dcc       0x54 out/radio.o
+                0x0000000008003dcc                RadioSend
  .text.RadioSleep
-                0x0000000008003e00       0x14 out/radio.o
-                0x0000000008003e00                RadioSleep
+                0x0000000008003e20       0x14 out/radio.o
+                0x0000000008003e20                RadioSleep
  .text.RadioSetRxDutyCycle
-                0x0000000008003e14        0x4 out/radio.o
-                0x0000000008003e14                RadioSetRxDutyCycle
+                0x0000000008003e34        0x4 out/radio.o
+                0x0000000008003e34                RadioSetRxDutyCycle
  .text.RadioStartCad
-                0x0000000008003e18       0x6c out/radio.o
-                0x0000000008003e18                RadioStartCad
+                0x0000000008003e38       0x6c out/radio.o
+                0x0000000008003e38                RadioStartCad
  .text.RadioSetTxContinuousWave
-                0x0000000008003e84       0x4c out/radio.o
-                0x0000000008003e84                RadioSetTxContinuousWave
+                0x0000000008003ea4       0x4c out/radio.o
+                0x0000000008003ea4                RadioSetTxContinuousWave
  .text.RadioWriteBuffer
-                0x0000000008003ed0        0x4 out/radio.o
-                0x0000000008003ed0                RadioWriteBuffer
+                0x0000000008003ef0        0x4 out/radio.o
+                0x0000000008003ef0                RadioWriteBuffer
  .text.RadioReadBuffer
-                0x0000000008003ed4        0x4 out/radio.o
-                0x0000000008003ed4                RadioReadBuffer
+                0x0000000008003ef4        0x4 out/radio.o
+                0x0000000008003ef4                RadioReadBuffer
  .text.RadioGetWakeupTime
-                0x0000000008003ed8        0xa out/radio.o
-                0x0000000008003ed8                RadioGetWakeupTime
- *fill*         0x0000000008003ee2        0x2 
+                0x0000000008003ef8        0xa out/radio.o
+                0x0000000008003ef8                RadioGetWakeupTime
+ *fill*         0x0000000008003f02        0x2 
  .text.RadioOnCadTimeoutIrq
-                0x0000000008003ee4       0x20 out/radio.o
-                0x0000000008003ee4                RadioOnCadTimeoutIrq
+                0x0000000008003f04       0x20 out/radio.o
+                0x0000000008003f04                RadioOnCadTimeoutIrq
  .text.RadioGetFskBandwidthRegValue
-                0x0000000008003f04       0x34 out/radio.o
+                0x0000000008003f24       0x34 out/radio.o
  .text.RadioSetMaxPayloadLength
-                0x0000000008003f38       0x28 out/radio.o
-                0x0000000008003f38                RadioSetMaxPayloadLength
- .text.RadioRx  0x0000000008003f60       0x44 out/radio.o
-                0x0000000008003f60                RadioRx
+                0x0000000008003f58       0x28 out/radio.o
+                0x0000000008003f58                RadioSetMaxPayloadLength
+ .text.RadioRx  0x0000000008003f80       0x44 out/radio.o
+                0x0000000008003f80                RadioRx
  .text.RadioRxBoosted
-                0x0000000008003fa4       0x40 out/radio.o
-                0x0000000008003fa4                RadioRxBoosted
+                0x0000000008003fc4       0x40 out/radio.o
+                0x0000000008003fc4                RadioRxBoosted
  .text.RadioIrqProcess
-                0x0000000008003fe4      0x160 out/radio.o
-                0x0000000008003fe4                RadioIrqProcess
+                0x0000000008004004      0x160 out/radio.o
+                0x0000000008004004                RadioIrqProcess
  .text.RadioSetPublicNetwork
-                0x0000000008004144       0x3c out/radio.o
-                0x0000000008004144                RadioSetPublicNetwork
+                0x0000000008004164       0x3c out/radio.o
+                0x0000000008004164                RadioSetPublicNetwork
  .text.RadioSetModem.part.0
-                0x0000000008004180       0x24 out/radio.o
+                0x00000000080041a0       0x24 out/radio.o
  .text.RadioSetModem
-                0x00000000080041a4       0x20 out/radio.o
-                0x00000000080041a4                RadioSetModem
+                0x00000000080041c4       0x20 out/radio.o
+                0x00000000080041c4                RadioSetModem
  .text.RadioIsChannelFree
-                0x00000000080041c4       0x4e out/radio.o
-                0x00000000080041c4                RadioIsChannelFree
+                0x00000000080041e4       0x4e out/radio.o
+                0x00000000080041e4                RadioIsChannelFree
  .text.RadioRandom
-                0x0000000008004212       0x3c out/radio.o
-                0x0000000008004212                RadioRandom
- *fill*         0x000000000800424e        0x2 
+                0x0000000008004232       0x3c out/radio.o
+                0x0000000008004232                RadioRandom
+ *fill*         0x000000000800426e        0x2 
  .text.RadioSymbTime
-                0x0000000008004250       0x2c out/radio.o
-                0x0000000008004250                RadioSymbTime
- *fill*         0x000000000800427c        0x4 
+                0x0000000008004270       0x2c out/radio.o
+                0x0000000008004270                RadioSymbTime
+ *fill*         0x000000000800429c        0x4 
  .text.RadioSetRxConfig
-                0x0000000008004280      0x21c out/radio.o
-                0x0000000008004280                RadioSetRxConfig
- *fill*         0x000000000800449c        0x4 
+                0x00000000080042a0      0x21c out/radio.o
+                0x00000000080042a0                RadioSetRxConfig
+ *fill*         0x00000000080044bc        0x4 
  .text.RadioSetTxConfig
-                0x00000000080044a0      0x198 out/radio.o
-                0x00000000080044a0                RadioSetTxConfig
+                0x00000000080044c0      0x198 out/radio.o
+                0x00000000080044c0                RadioSetTxConfig
  .text.RadioTimeOnAir
-                0x0000000008004638      0x190 out/radio.o
-                0x0000000008004638                RadioTimeOnAir
+                0x0000000008004658      0x190 out/radio.o
+                0x0000000008004658                RadioTimeOnAir
  .text.RadioOnDioIrq
-                0x00000000080047c8       0x24 out/radio.o
-                0x00000000080047c8                RadioOnDioIrq
+                0x00000000080047e8       0x24 out/radio.o
+                0x00000000080047e8                RadioOnDioIrq
  .text.SX126xGetOperatingMode
-                0x00000000080047ec        0xc out/sx126x.o
-                0x00000000080047ec                SX126xGetOperatingMode
+                0x000000000800480c        0xc out/sx126x.o
+                0x000000000800480c                SX126xGetOperatingMode
  .text.SX126xSetOperatingMode
-                0x00000000080047f8        0xc out/sx126x.o
-                0x00000000080047f8                SX126xSetOperatingMode
+                0x0000000008004818        0xc out/sx126x.o
+                0x0000000008004818                SX126xSetOperatingMode
  .text.SX126xCheckDeviceReady
-                0x0000000008004804       0x38 out/sx126x.o
-                0x0000000008004804                SX126xCheckDeviceReady
+                0x0000000008004824       0x38 out/sx126x.o
+                0x0000000008004824                SX126xCheckDeviceReady
  .text.SX126xSetPayload
-                0x000000000800483c        0xa out/sx126x.o
-                0x000000000800483c                SX126xSetPayload
+                0x000000000800485c        0xa out/sx126x.o
+                0x000000000800485c                SX126xSetPayload
  .text.SX126xSetSyncWord
-                0x0000000008004846       0x12 out/sx126x.o
-                0x0000000008004846                SX126xSetSyncWord
+                0x0000000008004866       0x12 out/sx126x.o
+                0x0000000008004866                SX126xSetSyncWord
  .text.SX126xSetCrcSeed
-                0x0000000008004858       0x24 out/sx126x.o
-                0x0000000008004858                SX126xSetCrcSeed
+                0x0000000008004878       0x24 out/sx126x.o
+                0x0000000008004878                SX126xSetCrcSeed
  .text.SX126xSetCrcPolynomial
-                0x000000000800487c       0x24 out/sx126x.o
-                0x000000000800487c                SX126xSetCrcPolynomial
+                0x000000000800489c       0x24 out/sx126x.o
+                0x000000000800489c                SX126xSetCrcPolynomial
  .text.SX126xSetWhiteningSeed
-                0x00000000080048a0       0x38 out/sx126x.o
-                0x00000000080048a0                SX126xSetWhiteningSeed
+                0x00000000080048c0       0x38 out/sx126x.o
+                0x00000000080048c0                SX126xSetWhiteningSeed
  .text.SX126xSetSleep
-                0x00000000080048d8       0x24 out/sx126x.o
-                0x00000000080048d8                SX126xSetSleep
+                0x00000000080048f8       0x24 out/sx126x.o
+                0x00000000080048f8                SX126xSetSleep
  .text.SX126xSetStandby
-                0x00000000080048fc       0x2c out/sx126x.o
-                0x00000000080048fc                SX126xSetStandby
+                0x000000000800491c       0x2c out/sx126x.o
+                0x000000000800491c                SX126xSetStandby
  .text.SX126xSetTx
-                0x0000000008004928       0x2c out/sx126x.o
-                0x0000000008004928                SX126xSetTx
+                0x0000000008004948       0x2c out/sx126x.o
+                0x0000000008004948                SX126xSetTx
  .text.SX126xSendPayload
-                0x0000000008004954       0x12 out/sx126x.o
-                0x0000000008004954                SX126xSendPayload
- *fill*         0x0000000008004966        0x2 
+                0x0000000008004974       0x12 out/sx126x.o
+                0x0000000008004974                SX126xSendPayload
+ *fill*         0x0000000008004986        0x2 
  .text.SX126xSetRx
-                0x0000000008004968       0x2c out/sx126x.o
-                0x0000000008004968                SX126xSetRx
+                0x0000000008004988       0x2c out/sx126x.o
+                0x0000000008004988                SX126xSetRx
  .text.SX126xSetRxBoosted
-                0x0000000008004994       0x38 out/sx126x.o
-                0x0000000008004994                SX126xSetRxBoosted
+                0x00000000080049b4       0x38 out/sx126x.o
+                0x00000000080049b4                SX126xSetRxBoosted
  .text.SX126xSetRxDutyCycle
-                0x00000000080049cc       0x38 out/sx126x.o
-                0x00000000080049cc                SX126xSetRxDutyCycle
+                0x00000000080049ec       0x38 out/sx126x.o
+                0x00000000080049ec                SX126xSetRxDutyCycle
  .text.SX126xSetCad
-                0x0000000008004a04       0x18 out/sx126x.o
-                0x0000000008004a04                SX126xSetCad
+                0x0000000008004a24       0x18 out/sx126x.o
+                0x0000000008004a24                SX126xSetCad
  .text.SX126xSetTxContinuousWave
-                0x0000000008004a1c        0xa out/sx126x.o
-                0x0000000008004a1c                SX126xSetTxContinuousWave
+                0x0000000008004a3c        0xa out/sx126x.o
+                0x0000000008004a3c                SX126xSetTxContinuousWave
  .text.SX126xSetStopRxTimerOnPreambleDetect
-                0x0000000008004a26       0x18 out/sx126x.o
-                0x0000000008004a26                SX126xSetStopRxTimerOnPreambleDetect
+                0x0000000008004a46       0x18 out/sx126x.o
+                0x0000000008004a46                SX126xSetStopRxTimerOnPreambleDetect
  .text.SX126xSetLoRaSymbNumTimeout
-                0x0000000008004a3e       0x18 out/sx126x.o
-                0x0000000008004a3e                SX126xSetLoRaSymbNumTimeout
+                0x0000000008004a5e       0x18 out/sx126x.o
+                0x0000000008004a5e                SX126xSetLoRaSymbNumTimeout
  .text.SX126xSetRegulatorMode
-                0x0000000008004a56       0x18 out/sx126x.o
-                0x0000000008004a56                SX126xSetRegulatorMode
- *fill*         0x0000000008004a6e        0x2 
+                0x0000000008004a76       0x18 out/sx126x.o
+                0x0000000008004a76                SX126xSetRegulatorMode
+ *fill*         0x0000000008004a8e        0x2 
  .text.SX126xCalibrateImage
-                0x0000000008004a70       0x64 out/sx126x.o
-                0x0000000008004a70                SX126xCalibrateImage
+                0x0000000008004a90       0x64 out/sx126x.o
+                0x0000000008004a90                SX126xCalibrateImage
  .text.SX126xSetPaConfig
-                0x0000000008004ad4       0x24 out/sx126x.o
-                0x0000000008004ad4                SX126xSetPaConfig
+                0x0000000008004af4       0x24 out/sx126x.o
+                0x0000000008004af4                SX126xSetPaConfig
  .text.SX126xSetDioIrqParams
-                0x0000000008004af8       0x2a out/sx126x.o
-                0x0000000008004af8                SX126xSetDioIrqParams
+                0x0000000008004b18       0x2a out/sx126x.o
+                0x0000000008004b18                SX126xSetDioIrqParams
  .text.SX126xGetIrqStatus
-                0x0000000008004b22       0x1e out/sx126x.o
-                0x0000000008004b22                SX126xGetIrqStatus
+                0x0000000008004b42       0x1e out/sx126x.o
+                0x0000000008004b42                SX126xGetIrqStatus
  .text.SX126xSetDio2AsRfSwitchCtrl
-                0x0000000008004b40       0x18 out/sx126x.o
-                0x0000000008004b40                SX126xSetDio2AsRfSwitchCtrl
+                0x0000000008004b60       0x18 out/sx126x.o
+                0x0000000008004b60                SX126xSetDio2AsRfSwitchCtrl
  .text.SX126xInit
-                0x0000000008004b58       0x28 out/sx126x.o
-                0x0000000008004b58                SX126xInit
+                0x0000000008004b78       0x28 out/sx126x.o
+                0x0000000008004b78                SX126xInit
  .text.SX126xSetRfFrequency
-                0x0000000008004b80       0x4c out/sx126x.o
-                0x0000000008004b80                SX126xSetRfFrequency
+                0x0000000008004ba0       0x4c out/sx126x.o
+                0x0000000008004ba0                SX126xSetRfFrequency
  .text.SX126xSetPacketType
-                0x0000000008004bcc       0x20 out/sx126x.o
-                0x0000000008004bcc                SX126xSetPacketType
+                0x0000000008004bec       0x20 out/sx126x.o
+                0x0000000008004bec                SX126xSetPacketType
  .text.SX126xGetPacketType
-                0x0000000008004bec        0xc out/sx126x.o
-                0x0000000008004bec                SX126xGetPacketType
+                0x0000000008004c0c        0xc out/sx126x.o
+                0x0000000008004c0c                SX126xGetPacketType
  .text.SX126xSetTxParams
-                0x0000000008004bf8       0xbc out/sx126x.o
-                0x0000000008004bf8                SX126xSetTxParams
- *fill*         0x0000000008004cb4        0x4 
+                0x0000000008004c18       0xbc out/sx126x.o
+                0x0000000008004c18                SX126xSetTxParams
+ *fill*         0x0000000008004cd4        0x4 
  .text.SX126xSetModulationParams
-                0x0000000008004cb8       0xb4 out/sx126x.o
-                0x0000000008004cb8                SX126xSetModulationParams
+                0x0000000008004cd8       0xb4 out/sx126x.o
+                0x0000000008004cd8                SX126xSetModulationParams
  .text.SX126xSetPacketParams
-                0x0000000008004d6c       0xac out/sx126x.o
-                0x0000000008004d6c                SX126xSetPacketParams
+                0x0000000008004d8c       0xac out/sx126x.o
+                0x0000000008004d8c                SX126xSetPacketParams
  .text.SX126xSetCadParams
-                0x0000000008004e18       0x3c out/sx126x.o
-                0x0000000008004e18                SX126xSetCadParams
+                0x0000000008004e38       0x3c out/sx126x.o
+                0x0000000008004e38                SX126xSetCadParams
  .text.SX126xSetBufferBaseAddress
-                0x0000000008004e54       0x1a out/sx126x.o
-                0x0000000008004e54                SX126xSetBufferBaseAddress
+                0x0000000008004e74       0x1a out/sx126x.o
+                0x0000000008004e74                SX126xSetBufferBaseAddress
  .text.SX126xGetRssiInst
-                0x0000000008004e6e       0x1a out/sx126x.o
-                0x0000000008004e6e                SX126xGetRssiInst
+                0x0000000008004e8e       0x1a out/sx126x.o
+                0x0000000008004e8e                SX126xGetRssiInst
  .text.SX126xGetRxBufferStatus
-                0x0000000008004e88       0x48 out/sx126x.o
-                0x0000000008004e88                SX126xGetRxBufferStatus
+                0x0000000008004ea8       0x48 out/sx126x.o
+                0x0000000008004ea8                SX126xGetRxBufferStatus
  .text.SX126xGetPayload
-                0x0000000008004ed0       0x32 out/sx126x.o
-                0x0000000008004ed0                SX126xGetPayload
- *fill*         0x0000000008004f02        0x2 
+                0x0000000008004ef0       0x32 out/sx126x.o
+                0x0000000008004ef0                SX126xGetPayload
+ *fill*         0x0000000008004f22        0x2 
  .text.SX126xGetPacketStatus
-                0x0000000008004f04       0x80 out/sx126x.o
-                0x0000000008004f04                SX126xGetPacketStatus
+                0x0000000008004f24       0x80 out/sx126x.o
+                0x0000000008004f24                SX126xGetPacketStatus
  .text.SX126xClearIrqStatus
-                0x0000000008004f84       0x18 out/sx126x.o
-                0x0000000008004f84                SX126xClearIrqStatus
- .text.rand1    0x0000000008004f9c       0x28 out/utilities.o
-                0x0000000008004f9c                rand1
- .text.srand1   0x0000000008004fc4        0xc out/utilities.o
-                0x0000000008004fc4                srand1
- .text.randr    0x0000000008004fd0       0x1a out/utilities.o
-                0x0000000008004fd0                randr
- .text.memcpy1  0x0000000008004fea       0x14 out/utilities.o
-                0x0000000008004fea                memcpy1
- .text.memcpyr  0x0000000008004ffe       0x14 out/utilities.o
-                0x0000000008004ffe                memcpyr
- .text.memset1  0x0000000008005012        0xe out/utilities.o
-                0x0000000008005012                memset1
- .text.RtcInit  0x0000000008005020       0x30 out/rtc-board.o
-                0x0000000008005020                RtcInit
+                0x0000000008004fa4       0x18 out/sx126x.o
+                0x0000000008004fa4                SX126xClearIrqStatus
+ .text.rand1    0x0000000008004fbc       0x28 out/utilities.o
+                0x0000000008004fbc                rand1
+ .text.srand1   0x0000000008004fe4        0xc out/utilities.o
+                0x0000000008004fe4                srand1
+ .text.randr    0x0000000008004ff0       0x1a out/utilities.o
+                0x0000000008004ff0                randr
+ .text.memcpy1  0x000000000800500a       0x14 out/utilities.o
+                0x000000000800500a                memcpy1
+ .text.memcpyr  0x000000000800501e       0x14 out/utilities.o
+                0x000000000800501e                memcpyr
+ .text.memset1  0x0000000008005032        0xe out/utilities.o
+                0x0000000008005032                memset1
+ .text.RtcInit  0x0000000008005040       0x30 out/rtc-board.o
+                0x0000000008005040                RtcInit
  .text.RtcSetTimeout
-                0x0000000008005050       0x8c out/rtc-board.o
-                0x0000000008005050                RtcSetTimeout
+                0x0000000008005070       0x8c out/rtc-board.o
+                0x0000000008005070                RtcSetTimeout
  .text.RtcStopTimeout
-                0x00000000080050dc       0x14 out/rtc-board.o
-                0x00000000080050dc                RtcStopTimeout
+                0x00000000080050fc       0x14 out/rtc-board.o
+                0x00000000080050fc                RtcStopTimeout
  .text.RtcGetTimerContext
-                0x00000000080050f0        0xc out/rtc-board.o
-                0x00000000080050f0                RtcGetTimerContext
+                0x0000000008005110        0xc out/rtc-board.o
+                0x0000000008005110                RtcGetTimerContext
  .text.RtcGetTimerValue
-                0x00000000080050fc      0x120 out/rtc-board.o
-                0x00000000080050fc                RtcGetTimerValue
+                0x000000000800511c      0x120 out/rtc-board.o
+                0x000000000800511c                RtcGetTimerValue
  .text.RtcSetTimerContext
-                0x000000000800521c       0x18 out/rtc-board.o
-                0x000000000800521c                RtcSetTimerContext
+                0x000000000800523c       0x18 out/rtc-board.o
+                0x000000000800523c                RtcSetTimerContext
  .text.RtcGetElapsedTime
-                0x0000000008005234       0x18 out/rtc-board.o
-                0x0000000008005234                RtcGetElapsedTime
+                0x0000000008005254       0x18 out/rtc-board.o
+                0x0000000008005254                RtcGetElapsedTime
  .text.RtcOnIrq
-                0x000000000800524c       0x32 out/rtc-board.o
-                0x000000000800524c                RtcOnIrq
+                0x000000000800526c       0x32 out/rtc-board.o
+                0x000000000800526c                RtcOnIrq
  .text.BoardDisableIrq
-                0x000000000800527e        0x4 out/sx1262-board.o
-                0x000000000800527e                BoardDisableIrq
+                0x000000000800529e        0x4 out/sx1262-board.o
+                0x000000000800529e                BoardDisableIrq
  .text.BoardEnableIrq
-                0x0000000008005282        0x4 out/sx1262-board.o
-                0x0000000008005282                BoardEnableIrq
- *fill*         0x0000000008005286        0x2 
+                0x00000000080052a2        0x4 out/sx1262-board.o
+                0x00000000080052a2                BoardEnableIrq
+ *fill*         0x00000000080052a6        0x2 
  .text.SpiInOut
-                0x0000000008005288       0x18 out/sx1262-board.o
-                0x0000000008005288                SpiInOut
+                0x00000000080052a8       0x18 out/sx1262-board.o
+                0x00000000080052a8                SpiInOut
  .text.SX126xLoracInit
-                0x00000000080052a0       0x5c out/sx1262-board.o
-                0x00000000080052a0                SX126xLoracInit
+                0x00000000080052c0       0x5c out/sx1262-board.o
+                0x00000000080052c0                SX126xLoracInit
  .text.SX126xGetBoardTcxoWakeupTime
-                0x00000000080052fc        0x4 out/sx1262-board.o
-                0x00000000080052fc                SX126xGetBoardTcxoWakeupTime
+                0x000000000800531c        0x4 out/sx1262-board.o
+                0x000000000800531c                SX126xGetBoardTcxoWakeupTime
  .text.SX126xReset
-                0x0000000008005300       0x54 out/sx1262-board.o
-                0x0000000008005300                SX126xReset
+                0x0000000008005320       0x54 out/sx1262-board.o
+                0x0000000008005320                SX126xReset
  .text.SX126xWaitOnBusy
-                0x0000000008005354       0x18 out/sx1262-board.o
-                0x0000000008005354                SX126xWaitOnBusy
+                0x0000000008005374       0x18 out/sx1262-board.o
+                0x0000000008005374                SX126xWaitOnBusy
  .text.SX126xWakeup
-                0x000000000800536c       0x30 out/sx1262-board.o
-                0x000000000800536c                SX126xWakeup
+                0x000000000800538c       0x30 out/sx1262-board.o
+                0x000000000800538c                SX126xWakeup
  .text.SX126xWriteCommand
-                0x000000000800539c       0x44 out/sx1262-board.o
-                0x000000000800539c                SX126xWriteCommand
+                0x00000000080053bc       0x44 out/sx1262-board.o
+                0x00000000080053bc                SX126xWriteCommand
  .text.SX126xReadCommand
-                0x00000000080053e0       0x48 out/sx1262-board.o
-                0x00000000080053e0                SX126xReadCommand
+                0x0000000008005400       0x48 out/sx1262-board.o
+                0x0000000008005400                SX126xReadCommand
  .text.SX126xWriteRegisters
-                0x0000000008005428       0x48 out/sx1262-board.o
-                0x0000000008005428                SX126xWriteRegisters
+                0x0000000008005448       0x48 out/sx1262-board.o
+                0x0000000008005448                SX126xWriteRegisters
  .text.SX126xWriteRegister
-                0x0000000008005470       0x16 out/sx1262-board.o
-                0x0000000008005470                SX126xWriteRegister
- *fill*         0x0000000008005486        0x2 
+                0x0000000008005490       0x16 out/sx1262-board.o
+                0x0000000008005490                SX126xWriteRegister
+ *fill*         0x00000000080054a6        0x2 
  .text.SX126xReadRegisters
-                0x0000000008005488       0x50 out/sx1262-board.o
-                0x0000000008005488                SX126xReadRegisters
+                0x00000000080054a8       0x50 out/sx1262-board.o
+                0x00000000080054a8                SX126xReadRegisters
  .text.SX126xReadRegister
-                0x00000000080054d8       0x16 out/sx1262-board.o
-                0x00000000080054d8                SX126xReadRegister
- *fill*         0x00000000080054ee        0x2 
+                0x00000000080054f8       0x16 out/sx1262-board.o
+                0x00000000080054f8                SX126xReadRegister
+ *fill*         0x000000000800550e        0x2 
  .text.SX126xWriteBuffer
-                0x00000000080054f0       0x48 out/sx1262-board.o
-                0x00000000080054f0                SX126xWriteBuffer
+                0x0000000008005510       0x48 out/sx1262-board.o
+                0x0000000008005510                SX126xWriteBuffer
  .text.SX126xReadBuffer
-                0x0000000008005538       0x50 out/sx1262-board.o
-                0x0000000008005538                SX126xReadBuffer
+                0x0000000008005558       0x50 out/sx1262-board.o
+                0x0000000008005558                SX126xReadBuffer
  .text.SX126xSetRfTxPower
-                0x0000000008005588        0x6 out/sx1262-board.o
-                0x0000000008005588                SX126xSetRfTxPower
+                0x00000000080055a8        0x6 out/sx1262-board.o
+                0x00000000080055a8                SX126xSetRfTxPower
  .text.SX126xGetPaSelect
-                0x000000000800558e        0x4 out/sx1262-board.o
-                0x000000000800558e                SX126xGetPaSelect
- *fill*         0x0000000008005592        0x2 
+                0x00000000080055ae        0x4 out/sx1262-board.o
+                0x00000000080055ae                SX126xGetPaSelect
+ *fill*         0x00000000080055b2        0x2 
  .text.SX126xAntSwOn
-                0x0000000008005594       0x10 out/sx1262-board.o
-                0x0000000008005594                SX126xAntSwOn
+                0x00000000080055b4       0x10 out/sx1262-board.o
+                0x00000000080055b4                SX126xAntSwOn
  .text.SX126xAntSwOff
-                0x00000000080055a4       0x10 out/sx1262-board.o
-                0x00000000080055a4                SX126xAntSwOff
+                0x00000000080055c4       0x10 out/sx1262-board.o
+                0x00000000080055c4                SX126xAntSwOff
  .text.LoRaMacConfirmQueueInit
-                0x00000000080055b4       0x34 out/LoRaMacConfirmQueue.o
-                0x00000000080055b4                LoRaMacConfirmQueueInit
+                0x00000000080055d4       0x34 out/LoRaMacConfirmQueue.o
+                0x00000000080055d4                LoRaMacConfirmQueueInit
  .text.LoRaMacConfirmQueueAdd
-                0x00000000080055e8       0x44 out/LoRaMacConfirmQueue.o
-                0x00000000080055e8                LoRaMacConfirmQueueAdd
+                0x0000000008005608       0x44 out/LoRaMacConfirmQueue.o
+                0x0000000008005608                LoRaMacConfirmQueueAdd
  .text.LoRaMacConfirmQueueRemoveLast
-                0x000000000800562c       0x28 out/LoRaMacConfirmQueue.o
-                0x000000000800562c                LoRaMacConfirmQueueRemoveLast
+                0x000000000800564c       0x28 out/LoRaMacConfirmQueue.o
+                0x000000000800564c                LoRaMacConfirmQueueRemoveLast
  .text.LoRaMacConfirmQueueRemoveFirst
-                0x0000000008005654       0x28 out/LoRaMacConfirmQueue.o
-                0x0000000008005654                LoRaMacConfirmQueueRemoveFirst
+                0x0000000008005674       0x28 out/LoRaMacConfirmQueue.o
+                0x0000000008005674                LoRaMacConfirmQueueRemoveFirst
  .text.LoRaMacConfirmQueueSetStatus
-                0x000000000800567c       0x40 out/LoRaMacConfirmQueue.o
-                0x000000000800567c                LoRaMacConfirmQueueSetStatus
+                0x000000000800569c       0x40 out/LoRaMacConfirmQueue.o
+                0x000000000800569c                LoRaMacConfirmQueueSetStatus
  .text.LoRaMacConfirmQueueGetStatus
-                0x00000000080056bc       0x3c out/LoRaMacConfirmQueue.o
-                0x00000000080056bc                LoRaMacConfirmQueueGetStatus
+                0x00000000080056dc       0x3c out/LoRaMacConfirmQueue.o
+                0x00000000080056dc                LoRaMacConfirmQueueGetStatus
  .text.LoRaMacConfirmQueueSetStatusCmn
-                0x00000000080056f8       0x44 out/LoRaMacConfirmQueue.o
-                0x00000000080056f8                LoRaMacConfirmQueueSetStatusCmn
+                0x0000000008005718       0x44 out/LoRaMacConfirmQueue.o
+                0x0000000008005718                LoRaMacConfirmQueueSetStatusCmn
  .text.LoRaMacConfirmQueueGetStatusCmn
-                0x000000000800573c        0xc out/LoRaMacConfirmQueue.o
-                0x000000000800573c                LoRaMacConfirmQueueGetStatusCmn
+                0x000000000800575c        0xc out/LoRaMacConfirmQueue.o
+                0x000000000800575c                LoRaMacConfirmQueueGetStatusCmn
  .text.LoRaMacConfirmQueueIsCmdActive
-                0x0000000008005748       0x38 out/LoRaMacConfirmQueue.o
-                0x0000000008005748                LoRaMacConfirmQueueIsCmdActive
+                0x0000000008005768       0x38 out/LoRaMacConfirmQueue.o
+                0x0000000008005768                LoRaMacConfirmQueueIsCmdActive
  .text.LoRaMacConfirmQueueHandleCb
-                0x0000000008005780       0x60 out/LoRaMacConfirmQueue.o
-                0x0000000008005780                LoRaMacConfirmQueueHandleCb
+                0x00000000080057a0       0x60 out/LoRaMacConfirmQueue.o
+                0x00000000080057a0                LoRaMacConfirmQueueHandleCb
  .text.LoRaMacConfirmQueueGetCnt
-                0x00000000080057e0        0xc out/LoRaMacConfirmQueue.o
-                0x00000000080057e0                LoRaMacConfirmQueueGetCnt
+                0x0000000008005800        0xc out/LoRaMacConfirmQueue.o
+                0x0000000008005800                LoRaMacConfirmQueueGetCnt
  .text.LoRaMacConfirmQueueIsFull
-                0x00000000080057ec       0x14 out/LoRaMacConfirmQueue.o
-                0x00000000080057ec                LoRaMacConfirmQueueIsFull
+                0x000000000800580c       0x14 out/LoRaMacConfirmQueue.o
+                0x000000000800580c                LoRaMacConfirmQueueIsFull
  .text.SetMlmeScheduleUplinkIndication
-                0x0000000008005800       0x1c out/LoRaMac.o
+                0x0000000008005820       0x1c out/LoRaMac.o
  .text.AddMacCommand
-                0x000000000800581c      0x17c out/LoRaMac.o
+                0x000000000800583c      0x17c out/LoRaMac.o
  .text.ResetMacParameters
-                0x0000000008005998       0x8c out/LoRaMac.o
+                0x00000000080059b8       0x8c out/LoRaMac.o
  .text.ValidatePayloadLength
-                0x0000000008005a24       0x5c out/LoRaMac.o
+                0x0000000008005a44       0x5c out/LoRaMac.o
  .text.OnAckTimeoutTimerEvent
-                0x0000000008005a80       0x44 out/LoRaMac.o
+                0x0000000008005aa0       0x44 out/LoRaMac.o
  .text.PrepareRxDoneAbort
-                0x0000000008005ac4       0x5c out/LoRaMac.o
+                0x0000000008005ae4       0x5c out/LoRaMac.o
  .text.ProcessMacCommands
-                0x0000000008005b20      0x478 out/LoRaMac.o
+                0x0000000008005b40      0x478 out/LoRaMac.o
  .text.OnRadioRxDone
-                0x0000000008005f98      0x5a8 out/LoRaMac.o
+                0x0000000008005fb8      0x5a8 out/LoRaMac.o
  .text.RxWindowSetup
-                0x0000000008006540       0x14 out/LoRaMac.o
+                0x0000000008006560       0x14 out/LoRaMac.o
  .text.OnRxWindow1TimerEvent
-                0x0000000008006554       0x74 out/LoRaMac.o
+                0x0000000008006574       0x74 out/LoRaMac.o
  .text.OnRxWindow2TimerEvent
-                0x00000000080065c8       0x74 out/LoRaMac.o
+                0x00000000080065e8       0x74 out/LoRaMac.o
  .text.OpenContinuousRx2Window
-                0x000000000800663c       0x14 out/LoRaMac.o
+                0x000000000800665c       0x14 out/LoRaMac.o
  .text.OnRadioRxTimeout
-                0x0000000008006650       0xe0 out/LoRaMac.o
+                0x0000000008006670       0xe0 out/LoRaMac.o
  .text.OnRadioTxTimeout
-                0x0000000008006730       0x3c out/LoRaMac.o
+                0x0000000008006750       0x3c out/LoRaMac.o
  .text.OnRadioRxError
-                0x000000000800676c       0xe0 out/LoRaMac.o
+                0x000000000800678c       0xe0 out/LoRaMac.o
  .text.OnRadioTxDone
-                0x000000000800684c      0x128 out/LoRaMac.o
+                0x000000000800686c      0x128 out/LoRaMac.o
  .text.PrepareFrame
-                0x0000000008006974      0x38c out/LoRaMac.o
-                0x0000000008006974                PrepareFrame
+                0x0000000008006994      0x38c out/LoRaMac.o
+                0x0000000008006994                PrepareFrame
  .text.SendFrameOnChannel
-                0x0000000008006d00      0x114 out/LoRaMac.o
-                0x0000000008006d00                SendFrameOnChannel
+                0x0000000008006d20      0x114 out/LoRaMac.o
+                0x0000000008006d20                SendFrameOnChannel
  .text.ScheduleTx
-                0x0000000008006e14      0x1a4 out/LoRaMac.o
- .text.Send     0x0000000008006fb8       0x44 out/LoRaMac.o
-                0x0000000008006fb8                Send
+                0x0000000008006e34      0x1a4 out/LoRaMac.o
+ .text.Send     0x0000000008006fd8       0x44 out/LoRaMac.o
+                0x0000000008006fd8                Send
  .text.OnTxDelayedTimerEvent
-                0x0000000008006ffc       0x7c out/LoRaMac.o
+                0x000000000800701c       0x7c out/LoRaMac.o
  .text.OnMacStateCheckTimerEvent
-                0x0000000008007078      0x32c out/LoRaMac.o
+                0x0000000008007098      0x32c out/LoRaMac.o
  .text.SetTxContinuousWave
-                0x00000000080073a4       0x60 out/LoRaMac.o
-                0x00000000080073a4                SetTxContinuousWave
+                0x00000000080073c4       0x60 out/LoRaMac.o
+                0x00000000080073c4                SetTxContinuousWave
  .text.SetTxContinuousWave1
-                0x0000000008007404       0x40 out/LoRaMac.o
-                0x0000000008007404                SetTxContinuousWave1
+                0x0000000008007424       0x40 out/LoRaMac.o
+                0x0000000008007424                SetTxContinuousWave1
  .text.LoRaMacInitialization
-                0x0000000008007444      0x2f4 out/LoRaMac.o
-                0x0000000008007444                LoRaMacInitialization
+                0x0000000008007464      0x2f4 out/LoRaMac.o
+                0x0000000008007464                LoRaMacInitialization
  .text.LoRaMacQueryTxPossible
-                0x0000000008007738       0xdc out/LoRaMac.o
-                0x0000000008007738                LoRaMacQueryTxPossible
+                0x0000000008007758       0xdc out/LoRaMac.o
+                0x0000000008007758                LoRaMacQueryTxPossible
  .text.LoRaMacMibGetRequestConfirm
-                0x0000000008007814      0x150 out/LoRaMac.o
-                0x0000000008007814                LoRaMacMibGetRequestConfirm
+                0x0000000008007834      0x150 out/LoRaMac.o
+                0x0000000008007834                LoRaMacMibGetRequestConfirm
  .text.LoRaMacMulticastChannelLink
-                0x0000000008007964       0x40 out/LoRaMac.o
-                0x0000000008007964                LoRaMacMulticastChannelLink
+                0x0000000008007984       0x40 out/LoRaMac.o
+                0x0000000008007984                LoRaMacMulticastChannelLink
  .text.LoRaMacMulticastChannelUnlink
-                0x00000000080079a4       0x44 out/LoRaMac.o
-                0x00000000080079a4                LoRaMacMulticastChannelUnlink
+                0x00000000080079c4       0x44 out/LoRaMac.o
+                0x00000000080079c4                LoRaMacMulticastChannelUnlink
  .text.LoRaMacMibSetRequestConfirm
-                0x00000000080079e8      0x350 out/LoRaMac.o
-                0x00000000080079e8                LoRaMacMibSetRequestConfirm
+                0x0000000008007a08      0x350 out/LoRaMac.o
+                0x0000000008007a08                LoRaMacMibSetRequestConfirm
  .text.LoRaMacMlmeRequest
-                0x0000000008007d38      0x218 out/LoRaMac.o
-                0x0000000008007d38                LoRaMacMlmeRequest
+                0x0000000008007d58      0x218 out/LoRaMac.o
+                0x0000000008007d58                LoRaMacMlmeRequest
  .text.LoRaMacMcpsRequest
-                0x0000000008007f50      0x130 out/LoRaMac.o
-                0x0000000008007f50                LoRaMacMcpsRequest
+                0x0000000008007f70      0x130 out/LoRaMac.o
+                0x0000000008007f70                LoRaMacMcpsRequest
  .text.LoRaMacClassBInit
-                0x0000000008008080        0x2 out/LoRaMacClassB.o
-                0x0000000008008080                LoRaMacClassBInit
+                0x00000000080080a0        0x2 out/LoRaMacClassB.o
+                0x00000000080080a0                LoRaMacClassBInit
  .text.LoRaMacClassBSetBeaconState
-                0x0000000008008082        0x2 out/LoRaMacClassB.o
-                0x0000000008008082                LoRaMacClassBSetBeaconState
+                0x00000000080080a2        0x2 out/LoRaMacClassB.o
+                0x00000000080080a2                LoRaMacClassBSetBeaconState
  .text.LoRaMacClassBSetPingSlotState
-                0x0000000008008084        0x2 out/LoRaMacClassB.o
-                0x0000000008008084                LoRaMacClassBSetPingSlotState
+                0x00000000080080a4        0x2 out/LoRaMacClassB.o
+                0x00000000080080a4                LoRaMacClassBSetPingSlotState
  .text.LoRaMacClassBSetMulticastSlotState
-                0x0000000008008086        0x2 out/LoRaMacClassB.o
-                0x0000000008008086                LoRaMacClassBSetMulticastSlotState
- .text.LoRaMacClassBIsAcquisitionInProgress
-                0x0000000008008088        0x4 out/LoRaMacClassB.o
-                0x0000000008008088                LoRaMacClassBIsAcquisitionInProgress
- .text.LoRaMacClassBBeaconTimerEvent
-                0x000000000800808c        0x2 out/LoRaMacClassB.o
-                0x000000000800808c                LoRaMacClassBBeaconTimerEvent
- .text.LoRaMacClassBPingSlotTimerEvent
-                0x000000000800808e        0x2 out/LoRaMacClassB.o
-                0x000000000800808e                LoRaMacClassBPingSlotTimerEvent
- .text.LoRaMacClassBMulticastSlotTimerEvent
-                0x0000000008008090        0x2 out/LoRaMacClassB.o
-                0x0000000008008090                LoRaMacClassBMulticastSlotTimerEvent
- .text.LoRaMacClassBRxBeacon
-                0x0000000008008092        0x4 out/LoRaMacClassB.o
-                0x0000000008008092                LoRaMacClassBRxBeacon
- .text.LoRaMacClassBIsBeaconExpected
-                0x0000000008008096        0x4 out/LoRaMacClassB.o
-                0x0000000008008096                LoRaMacClassBIsBeaconExpected
- .text.LoRaMacClassBIsPingExpected
-                0x000000000800809a        0x4 out/LoRaMacClassB.o
-                0x000000000800809a                LoRaMacClassBIsPingExpected
- .text.LoRaMacClassBIsMulticastExpected
-                0x000000000800809e        0x4 out/LoRaMacClassB.o
-                0x000000000800809e                LoRaMacClassBIsMulticastExpected
- .text.LoRaMacClassBIsBeaconModeActive
-                0x00000000080080a2        0x4 out/LoRaMacClassB.o
-                0x00000000080080a2                LoRaMacClassBIsBeaconModeActive
- .text.LoRaMacClassBSetPingSlotInfo
                 0x00000000080080a6        0x2 out/LoRaMacClassB.o
-                0x00000000080080a6                LoRaMacClassBSetPingSlotInfo
- .text.LoRaMacClassBHaltBeaconing
-                0x00000000080080a8        0x2 out/LoRaMacClassB.o
-                0x00000000080080a8                LoRaMacClassBHaltBeaconing
- .text.LoRaMacClassBResumeBeaconing
-                0x00000000080080aa        0x2 out/LoRaMacClassB.o
-                0x00000000080080aa                LoRaMacClassBResumeBeaconing
- .text.LoRaMacClassBSwitchClass
-                0x00000000080080ac        0x4 out/LoRaMacClassB.o
-                0x00000000080080ac                LoRaMacClassBSwitchClass
- .text.LoRaMacClassBMibGetRequestConfirm
-                0x00000000080080b0        0x4 out/LoRaMacClassB.o
-                0x00000000080080b0                LoRaMacClassBMibGetRequestConfirm
- .text.LoRaMacMibClassBSetRequestConfirm
-                0x00000000080080b4        0x4 out/LoRaMacClassB.o
-                0x00000000080080b4                LoRaMacMibClassBSetRequestConfirm
- .text.LoRaMacClassBPingSlotInfoAns
-                0x00000000080080b8        0x2 out/LoRaMacClassB.o
-                0x00000000080080b8                LoRaMacClassBPingSlotInfoAns
- .text.LoRaMacClassBPingSlotChannelReq
+                0x00000000080080a6                LoRaMacClassBSetMulticastSlotState
+ .text.LoRaMacClassBIsAcquisitionInProgress
+                0x00000000080080a8        0x4 out/LoRaMacClassB.o
+                0x00000000080080a8                LoRaMacClassBIsAcquisitionInProgress
+ .text.LoRaMacClassBBeaconTimerEvent
+                0x00000000080080ac        0x2 out/LoRaMacClassB.o
+                0x00000000080080ac                LoRaMacClassBBeaconTimerEvent
+ .text.LoRaMacClassBPingSlotTimerEvent
+                0x00000000080080ae        0x2 out/LoRaMacClassB.o
+                0x00000000080080ae                LoRaMacClassBPingSlotTimerEvent
+ .text.LoRaMacClassBMulticastSlotTimerEvent
+                0x00000000080080b0        0x2 out/LoRaMacClassB.o
+                0x00000000080080b0                LoRaMacClassBMulticastSlotTimerEvent
+ .text.LoRaMacClassBRxBeacon
+                0x00000000080080b2        0x4 out/LoRaMacClassB.o
+                0x00000000080080b2                LoRaMacClassBRxBeacon
+ .text.LoRaMacClassBIsBeaconExpected
+                0x00000000080080b6        0x4 out/LoRaMacClassB.o
+                0x00000000080080b6                LoRaMacClassBIsBeaconExpected
+ .text.LoRaMacClassBIsPingExpected
                 0x00000000080080ba        0x4 out/LoRaMacClassB.o
-                0x00000000080080ba                LoRaMacClassBPingSlotChannelReq
- .text.LoRaMacClassBBeaconTimingAns
-                0x00000000080080be        0x2 out/LoRaMacClassB.o
-                0x00000000080080be                LoRaMacClassBBeaconTimingAns
- .text.LoRaMacClassBDeviceTimeAns
-                0x00000000080080c0        0x2 out/LoRaMacClassB.o
-                0x00000000080080c0                LoRaMacClassBDeviceTimeAns
- .text.LoRaMacClassBBeaconFreqReq
+                0x00000000080080ba                LoRaMacClassBIsPingExpected
+ .text.LoRaMacClassBIsMulticastExpected
+                0x00000000080080be        0x4 out/LoRaMacClassB.o
+                0x00000000080080be                LoRaMacClassBIsMulticastExpected
+ .text.LoRaMacClassBIsBeaconModeActive
                 0x00000000080080c2        0x4 out/LoRaMacClassB.o
-                0x00000000080080c2                LoRaMacClassBBeaconFreqReq
+                0x00000000080080c2                LoRaMacClassBIsBeaconModeActive
+ .text.LoRaMacClassBSetPingSlotInfo
+                0x00000000080080c6        0x2 out/LoRaMacClassB.o
+                0x00000000080080c6                LoRaMacClassBSetPingSlotInfo
+ .text.LoRaMacClassBHaltBeaconing
+                0x00000000080080c8        0x2 out/LoRaMacClassB.o
+                0x00000000080080c8                LoRaMacClassBHaltBeaconing
+ .text.LoRaMacClassBResumeBeaconing
+                0x00000000080080ca        0x2 out/LoRaMacClassB.o
+                0x00000000080080ca                LoRaMacClassBResumeBeaconing
+ .text.LoRaMacClassBSwitchClass
+                0x00000000080080cc        0x4 out/LoRaMacClassB.o
+                0x00000000080080cc                LoRaMacClassBSwitchClass
+ .text.LoRaMacClassBMibGetRequestConfirm
+                0x00000000080080d0        0x4 out/LoRaMacClassB.o
+                0x00000000080080d0                LoRaMacClassBMibGetRequestConfirm
+ .text.LoRaMacMibClassBSetRequestConfirm
+                0x00000000080080d4        0x4 out/LoRaMacClassB.o
+                0x00000000080080d4                LoRaMacMibClassBSetRequestConfirm
+ .text.LoRaMacClassBPingSlotInfoAns
+                0x00000000080080d8        0x2 out/LoRaMacClassB.o
+                0x00000000080080d8                LoRaMacClassBPingSlotInfoAns
+ .text.LoRaMacClassBPingSlotChannelReq
+                0x00000000080080da        0x4 out/LoRaMacClassB.o
+                0x00000000080080da                LoRaMacClassBPingSlotChannelReq
+ .text.LoRaMacClassBBeaconTimingAns
+                0x00000000080080de        0x2 out/LoRaMacClassB.o
+                0x00000000080080de                LoRaMacClassBBeaconTimingAns
+ .text.LoRaMacClassBDeviceTimeAns
+                0x00000000080080e0        0x2 out/LoRaMacClassB.o
+                0x00000000080080e0                LoRaMacClassBDeviceTimeAns
+ .text.LoRaMacClassBBeaconFreqReq
+                0x00000000080080e2        0x4 out/LoRaMacClassB.o
+                0x00000000080080e2                LoRaMacClassBBeaconFreqReq
  .text.LoRaMacClassBIsUplinkCollision
-                0x00000000080080c6        0x6 out/LoRaMacClassB.o
-                0x00000000080080c6                LoRaMacClassBIsUplinkCollision
+                0x00000000080080e6        0x6 out/LoRaMacClassB.o
+                0x00000000080080e6                LoRaMacClassBIsUplinkCollision
  .text.LoRaMacClassBStopRxSlots
-                0x00000000080080cc        0x2 out/LoRaMacClassB.o
-                0x00000000080080cc                LoRaMacClassBStopRxSlots
+                0x00000000080080ec        0x2 out/LoRaMacClassB.o
+                0x00000000080080ec                LoRaMacClassBStopRxSlots
  .text.LoRaMacClassBSetMulticastPeriodicity
-                0x00000000080080ce        0x2 out/LoRaMacClassB.o
-                0x00000000080080ce                LoRaMacClassBSetMulticastPeriodicity
+                0x00000000080080ee        0x2 out/LoRaMacClassB.o
+                0x00000000080080ee                LoRaMacClassBSetMulticastPeriodicity
  .text.LoRaMacComputeMic
-                0x00000000080080d0       0x70 out/LoRaMacCrypto.o
-                0x00000000080080d0                LoRaMacComputeMic
+                0x00000000080080f0       0x70 out/LoRaMacCrypto.o
+                0x00000000080080f0                LoRaMacComputeMic
  .text.LoRaMacPayloadEncrypt
-                0x0000000008008140       0xe0 out/LoRaMacCrypto.o
-                0x0000000008008140                LoRaMacPayloadEncrypt
+                0x0000000008008160       0xe0 out/LoRaMacCrypto.o
+                0x0000000008008160                LoRaMacPayloadEncrypt
  .text.LoRaMacPayloadDecrypt
-                0x0000000008008220       0x10 out/LoRaMacCrypto.o
-                0x0000000008008220                LoRaMacPayloadDecrypt
+                0x0000000008008240       0x10 out/LoRaMacCrypto.o
+                0x0000000008008240                LoRaMacPayloadDecrypt
  .text.LoRaMacJoinComputeMic
-                0x0000000008008230       0x3c out/LoRaMacCrypto.o
-                0x0000000008008230                LoRaMacJoinComputeMic
+                0x0000000008008250       0x3c out/LoRaMacCrypto.o
+                0x0000000008008250                LoRaMacJoinComputeMic
  .text.LoRaMacJoinDecrypt
-                0x000000000800826c       0x3e out/LoRaMacCrypto.o
-                0x000000000800826c                LoRaMacJoinDecrypt
+                0x000000000800828c       0x3e out/LoRaMacCrypto.o
+                0x000000000800828c                LoRaMacJoinDecrypt
  .text.LoRaMacJoinComputeSKeys
-                0x00000000080082aa       0x86 out/LoRaMacCrypto.o
-                0x00000000080082aa                LoRaMacJoinComputeSKeys
+                0x00000000080082ca       0x86 out/LoRaMacCrypto.o
+                0x00000000080082ca                LoRaMacJoinComputeSKeys
  .text.RegionIsActive
-                0x0000000008008330        0x8 out/Region.o
-                0x0000000008008330                RegionIsActive
+                0x0000000008008350        0x8 out/Region.o
+                0x0000000008008350                RegionIsActive
  .text.RegionGetPhyParam
-                0x0000000008008338       0x12 out/Region.o
-                0x0000000008008338                RegionGetPhyParam
+                0x0000000008008358       0x12 out/Region.o
+                0x0000000008008358                RegionGetPhyParam
  .text.RegionSetBandTxDone
-                0x000000000800834a        0xa out/Region.o
-                0x000000000800834a                RegionSetBandTxDone
+                0x000000000800836a        0xa out/Region.o
+                0x000000000800836a                RegionSetBandTxDone
  .text.RegionInitDefaults
-                0x0000000008008354        0xa out/Region.o
-                0x0000000008008354                RegionInitDefaults
+                0x0000000008008374        0xa out/Region.o
+                0x0000000008008374                RegionInitDefaults
  .text.RegionVerify
-                0x000000000800835e       0x10 out/Region.o
-                0x000000000800835e                RegionVerify
+                0x000000000800837e       0x10 out/Region.o
+                0x000000000800837e                RegionVerify
  .text.RegionApplyCFList
-                0x000000000800836e        0xa out/Region.o
-                0x000000000800836e                RegionApplyCFList
+                0x000000000800838e        0xa out/Region.o
+                0x000000000800838e                RegionApplyCFList
  .text.RegionChanMaskSet
-                0x0000000008008378        0xc out/Region.o
-                0x0000000008008378                RegionChanMaskSet
+                0x0000000008008398        0xc out/Region.o
+                0x0000000008008398                RegionChanMaskSet
  .text.RegionAdrNext
-                0x0000000008008384       0x1e out/Region.o
-                0x0000000008008384                RegionAdrNext
+                0x00000000080083a4       0x1e out/Region.o
+                0x00000000080083a4                RegionAdrNext
  .text.RegionComputeRxWindowParameters
-                0x00000000080083a2       0x1c out/Region.o
-                0x00000000080083a2                RegionComputeRxWindowParameters
+                0x00000000080083c2       0x1c out/Region.o
+                0x00000000080083c2                RegionComputeRxWindowParameters
  .text.RegionRxConfig
-                0x00000000080083be       0x10 out/Region.o
-                0x00000000080083be                RegionRxConfig
+                0x00000000080083de       0x10 out/Region.o
+                0x00000000080083de                RegionRxConfig
  .text.RegionTxConfig
-                0x00000000080083ce       0x1c out/Region.o
-                0x00000000080083ce                RegionTxConfig
+                0x00000000080083ee       0x1c out/Region.o
+                0x00000000080083ee                RegionTxConfig
  .text.RegionLinkAdrReq
-                0x00000000080083ea       0x1e out/Region.o
-                0x00000000080083ea                RegionLinkAdrReq
+                0x000000000800840a       0x1e out/Region.o
+                0x000000000800840a                RegionLinkAdrReq
  .text.RegionRxParamSetupReq
-                0x0000000008008408        0xc out/Region.o
-                0x0000000008008408                RegionRxParamSetupReq
+                0x0000000008008428        0xc out/Region.o
+                0x0000000008008428                RegionRxParamSetupReq
  .text.RegionNewChannelReq
-                0x0000000008008414        0xc out/Region.o
-                0x0000000008008414                RegionNewChannelReq
+                0x0000000008008434        0xc out/Region.o
+                0x0000000008008434                RegionNewChannelReq
  .text.RegionTxParamSetupReq
-                0x0000000008008420        0xc out/Region.o
-                0x0000000008008420                RegionTxParamSetupReq
+                0x0000000008008440        0xc out/Region.o
+                0x0000000008008440                RegionTxParamSetupReq
  .text.RegionDlChannelReq
-                0x000000000800842c        0xc out/Region.o
-                0x000000000800842c                RegionDlChannelReq
+                0x000000000800844c        0xc out/Region.o
+                0x000000000800844c                RegionDlChannelReq
  .text.RegionAlternateDr
-                0x0000000008008438        0xc out/Region.o
-                0x0000000008008438                RegionAlternateDr
+                0x0000000008008458        0xc out/Region.o
+                0x0000000008008458                RegionAlternateDr
  .text.RegionCalcBackOff
-                0x0000000008008444        0xa out/Region.o
-                0x0000000008008444                RegionCalcBackOff
+                0x0000000008008464        0xa out/Region.o
+                0x0000000008008464                RegionCalcBackOff
  .text.RegionNextChannel
-                0x000000000800844e       0x1e out/Region.o
-                0x000000000800844e                RegionNextChannel
+                0x000000000800846e       0x1e out/Region.o
+                0x000000000800846e                RegionNextChannel
  .text.RegionSetContinuousWave
-                0x000000000800846c        0xa out/Region.o
-                0x000000000800846c                RegionSetContinuousWave
+                0x000000000800848c        0xa out/Region.o
+                0x000000000800848c                RegionSetContinuousWave
  .text.RegionApplyDrOffset
-                0x0000000008008476       0x1c out/Region.o
-                0x0000000008008476                RegionApplyDrOffset
- *fill*         0x0000000008008492        0x2 
+                0x0000000008008496       0x1c out/Region.o
+                0x0000000008008496                RegionApplyDrOffset
+ *fill*         0x00000000080084b2        0x2 
  .text.RegionCommonGetJoinDc
-                0x0000000008008494       0x30 out/RegionCommon.o
-                0x0000000008008494                RegionCommonGetJoinDc
+                0x00000000080084b4       0x30 out/RegionCommon.o
+                0x00000000080084b4                RegionCommonGetJoinDc
  .text.RegionCommonChanVerifyDr
-                0x00000000080084c4       0x66 out/RegionCommon.o
-                0x00000000080084c4                RegionCommonChanVerifyDr
+                0x00000000080084e4       0x66 out/RegionCommon.o
+                0x00000000080084e4                RegionCommonChanVerifyDr
  .text.RegionCommonValueInRange
-                0x000000000800852a       0x12 out/RegionCommon.o
-                0x000000000800852a                RegionCommonValueInRange
+                0x000000000800854a       0x12 out/RegionCommon.o
+                0x000000000800854a                RegionCommonValueInRange
  .text.RegionCommonChanDisable
-                0x000000000800853c       0x32 out/RegionCommon.o
-                0x000000000800853c                RegionCommonChanDisable
+                0x000000000800855c       0x32 out/RegionCommon.o
+                0x000000000800855c                RegionCommonChanDisable
  .text.RegionCommonCountChannels
-                0x000000000800856e       0x3c out/RegionCommon.o
-                0x000000000800856e                RegionCommonCountChannels
+                0x000000000800858e       0x3c out/RegionCommon.o
+                0x000000000800858e                RegionCommonCountChannels
  .text.RegionCommonChanMaskCopy
-                0x00000000080085aa       0x1e out/RegionCommon.o
-                0x00000000080085aa                RegionCommonChanMaskCopy
+                0x00000000080085ca       0x1e out/RegionCommon.o
+                0x00000000080085ca                RegionCommonChanMaskCopy
  .text.RegionCommonSetBandTxDone
-                0x00000000080085c8        0xe out/RegionCommon.o
-                0x00000000080085c8                RegionCommonSetBandTxDone
+                0x00000000080085e8        0xe out/RegionCommon.o
+                0x00000000080085e8                RegionCommonSetBandTxDone
  .text.RegionCommonUpdateBandTimeOff
-                0x00000000080085d6      0x10a out/RegionCommon.o
-                0x00000000080085d6                RegionCommonUpdateBandTimeOff
+                0x00000000080085f6      0x10a out/RegionCommon.o
+                0x00000000080085f6                RegionCommonUpdateBandTimeOff
  .text.RegionCommonParseLinkAdrReq
-                0x00000000080086e0       0x34 out/RegionCommon.o
-                0x00000000080086e0                RegionCommonParseLinkAdrReq
+                0x0000000008008700       0x34 out/RegionCommon.o
+                0x0000000008008700                RegionCommonParseLinkAdrReq
  .text.RegionCommonComputeSymbolTimeLoRa
-                0x0000000008008714       0x34 out/RegionCommon.o
-                0x0000000008008714                RegionCommonComputeSymbolTimeLoRa
+                0x0000000008008734       0x34 out/RegionCommon.o
+                0x0000000008008734                RegionCommonComputeSymbolTimeLoRa
  .text.RegionCommonComputeSymbolTimeFsk
-                0x0000000008008748       0x18 out/RegionCommon.o
-                0x0000000008008748                RegionCommonComputeSymbolTimeFsk
+                0x0000000008008768       0x18 out/RegionCommon.o
+                0x0000000008008768                RegionCommonComputeSymbolTimeFsk
  .text.RegionCommonComputeRxWindowParameters
-                0x0000000008008760       0xac out/RegionCommon.o
-                0x0000000008008760                RegionCommonComputeRxWindowParameters
+                0x0000000008008780       0xac out/RegionCommon.o
+                0x0000000008008780                RegionCommonComputeRxWindowParameters
  .text.RegionCommonComputeTxPower
-                0x000000000800880c       0x30 out/RegionCommon.o
-                0x000000000800880c                RegionCommonComputeTxPower
+                0x000000000800882c       0x30 out/RegionCommon.o
+                0x000000000800882c                RegionCommonComputeTxPower
  .text.VerifyTxFreq
-                0x000000000800883c       0x28 out/RegionAS923.o
+                0x000000000800885c       0x28 out/RegionAS923.o
  .text.RegionAS923GetPhyParam
-                0x0000000008008864      0x130 out/RegionAS923.o
-                0x0000000008008864                RegionAS923GetPhyParam
+                0x0000000008008884      0x130 out/RegionAS923.o
+                0x0000000008008884                RegionAS923GetPhyParam
  .text.RegionAS923SetBandTxDone
-                0x0000000008008994       0x2c out/RegionAS923.o
-                0x0000000008008994                RegionAS923SetBandTxDone
+                0x00000000080089b4       0x2c out/RegionAS923.o
+                0x00000000080089b4                RegionAS923SetBandTxDone
  .text.RegionAS923InitDefaults
-                0x00000000080089c0       0x50 out/RegionAS923.o
-                0x00000000080089c0                RegionAS923InitDefaults
+                0x00000000080089e0       0x50 out/RegionAS923.o
+                0x00000000080089e0                RegionAS923InitDefaults
  .text.RegionAS923Verify
-                0x0000000008008a10       0x56 out/RegionAS923.o
-                0x0000000008008a10                RegionAS923Verify
- *fill*         0x0000000008008a66        0x2 
+                0x0000000008008a30       0x56 out/RegionAS923.o
+                0x0000000008008a30                RegionAS923Verify
+ *fill*         0x0000000008008a86        0x2 
  .text.RegionAS923ChanMaskSet
-                0x0000000008008a68       0x34 out/RegionAS923.o
-                0x0000000008008a68                RegionAS923ChanMaskSet
+                0x0000000008008a88       0x34 out/RegionAS923.o
+                0x0000000008008a88                RegionAS923ChanMaskSet
  .text.RegionAS923AdrNext
-                0x0000000008008a9c       0xa8 out/RegionAS923.o
-                0x0000000008008a9c                RegionAS923AdrNext
+                0x0000000008008abc       0xa8 out/RegionAS923.o
+                0x0000000008008abc                RegionAS923AdrNext
  .text.RegionAS923ComputeRxWindowParameters
-                0x0000000008008b44       0x84 out/RegionAS923.o
-                0x0000000008008b44                RegionAS923ComputeRxWindowParameters
+                0x0000000008008b64       0x84 out/RegionAS923.o
+                0x0000000008008b64                RegionAS923ComputeRxWindowParameters
  .text.RegionAS923RxConfig
-                0x0000000008008bc8       0xec out/RegionAS923.o
-                0x0000000008008bc8                RegionAS923RxConfig
+                0x0000000008008be8       0xec out/RegionAS923.o
+                0x0000000008008be8                RegionAS923RxConfig
  .text.RegionAS923TxConfig
-                0x0000000008008cb4      0x10c out/RegionAS923.o
-                0x0000000008008cb4                RegionAS923TxConfig
+                0x0000000008008cd4      0x10c out/RegionAS923.o
+                0x0000000008008cd4                RegionAS923TxConfig
  .text.RegionAS923LinkAdrReq
-                0x0000000008008dc0      0x110 out/RegionAS923.o
-                0x0000000008008dc0                RegionAS923LinkAdrReq
+                0x0000000008008de0      0x110 out/RegionAS923.o
+                0x0000000008008de0                RegionAS923LinkAdrReq
  .text.RegionAS923RxParamSetupReq
-                0x0000000008008ed0       0x44 out/RegionAS923.o
-                0x0000000008008ed0                RegionAS923RxParamSetupReq
+                0x0000000008008ef0       0x44 out/RegionAS923.o
+                0x0000000008008ef0                RegionAS923RxParamSetupReq
  .text.RegionAS923TxParamSetupReq
-                0x0000000008008f14        0x4 out/RegionAS923.o
-                0x0000000008008f14                RegionAS923TxParamSetupReq
+                0x0000000008008f34        0x4 out/RegionAS923.o
+                0x0000000008008f34                RegionAS923TxParamSetupReq
  .text.RegionAS923DlChannelReq
-                0x0000000008008f18       0x38 out/RegionAS923.o
-                0x0000000008008f18                RegionAS923DlChannelReq
+                0x0000000008008f38       0x38 out/RegionAS923.o
+                0x0000000008008f38                RegionAS923DlChannelReq
  .text.RegionAS923AlternateDr
-                0x0000000008008f50        0x4 out/RegionAS923.o
-                0x0000000008008f50                RegionAS923AlternateDr
+                0x0000000008008f70        0x4 out/RegionAS923.o
+                0x0000000008008f70                RegionAS923AlternateDr
  .text.RegionAS923CalcBackOff
-                0x0000000008008f54       0x98 out/RegionAS923.o
-                0x0000000008008f54                RegionAS923CalcBackOff
+                0x0000000008008f74       0x98 out/RegionAS923.o
+                0x0000000008008f74                RegionAS923CalcBackOff
  .text.RegionAS923NextChannel
-                0x0000000008008fec      0x188 out/RegionAS923.o
-                0x0000000008008fec                RegionAS923NextChannel
+                0x000000000800900c      0x188 out/RegionAS923.o
+                0x000000000800900c                RegionAS923NextChannel
  .text.RegionAS923ChannelAdd
-                0x0000000008009174       0xd4 out/RegionAS923.o
-                0x0000000008009174                RegionAS923ChannelAdd
+                0x0000000008009194       0xd4 out/RegionAS923.o
+                0x0000000008009194                RegionAS923ChannelAdd
  .text.RegionAS923ChannelsRemove
-                0x0000000008009248       0x30 out/RegionAS923.o
-                0x0000000008009248                RegionAS923ChannelsRemove
+                0x0000000008009268       0x30 out/RegionAS923.o
+                0x0000000008009268                RegionAS923ChannelsRemove
  .text.RegionAS923ApplyCFList
-                0x0000000008009278       0x78 out/RegionAS923.o
-                0x0000000008009278                RegionAS923ApplyCFList
+                0x0000000008009298       0x78 out/RegionAS923.o
+                0x0000000008009298                RegionAS923ApplyCFList
  .text.RegionAS923NewChannelReq
-                0x00000000080092f0       0x40 out/RegionAS923.o
-                0x00000000080092f0                RegionAS923NewChannelReq
+                0x0000000008009310       0x40 out/RegionAS923.o
+                0x0000000008009310                RegionAS923NewChannelReq
  .text.RegionAS923SetContinuousWave
-                0x0000000008009330       0x4c out/RegionAS923.o
-                0x0000000008009330                RegionAS923SetContinuousWave
+                0x0000000008009350       0x4c out/RegionAS923.o
+                0x0000000008009350                RegionAS923SetContinuousWave
  .text.RegionAS923ApplyDrOffset
-                0x000000000800937c       0x2c out/RegionAS923.o
-                0x000000000800937c                RegionAS923ApplyDrOffset
+                0x000000000800939c       0x2c out/RegionAS923.o
+                0x000000000800939c                RegionAS923ApplyDrOffset
  .text.Reset_Handler
-                0x00000000080093a8       0x48 out/startup_cm4.o
-                0x00000000080093a8                Reset_Handler
+                0x00000000080093c8       0x48 out/startup_cm4.o
+                0x00000000080093c8                Reset_Handler
  .text.Default_Handler
-                0x00000000080093f0        0x2 out/startup_cm4.o
-                0x00000000080093f0                SCC_IRQHandler
-                0x00000000080093f0                TIMER2_IRQHandler
-                0x00000000080093f0                EFC_IRQHandler
-                0x00000000080093f0                I2C0_IRQHandler
-                0x00000000080093f0                SAC_IRQHandler
-                0x00000000080093f0                I2C1_IRQHandler
-                0x00000000080093f0                UART1_IRQHandler
-                0x00000000080093f0                BSTIMER0_IRQHandler
-                0x00000000080093f0                TIMER3_IRQHandler
-                0x00000000080093f0                UART0_IRQHandler
-                0x00000000080093f0                SEC_IRQHandler
-                0x00000000080093f0                WDG_IRQHandler
-                0x00000000080093f0                LPTIMER1_IRQHandler
-                0x00000000080093f0                LPTIMER0_IRQHandler
-                0x00000000080093f0                SSP0_IRQHandler
-                0x00000000080093f0                I2S_IRQHandler
-                0x00000000080093f0                I2C2_IRQHandler
-                0x00000000080093f0                TIMER0_IRQHandler
-                0x00000000080093f0                LCD_IRQHandler
-                0x00000000080093f0                LPUART_IRQHandler
-                0x00000000080093f0                TIMER1_IRQHandler
-                0x00000000080093f0                UART2_IRQHandler
-                0x00000000080093f0                Default_Handler
-                0x00000000080093f0                ADC_IRQHandler
-                0x00000000080093f0                SSP1_IRQHandler
-                0x00000000080093f0                DMA0_IRQHandler
-                0x00000000080093f0                IWDG_IRQHandler
-                0x00000000080093f0                SSP2_IRQHandler
-                0x00000000080093f0                BSTIMER1_IRQHandler
-                0x00000000080093f0                DAC_IRQHandler
-                0x00000000080093f0                AFEC_IRQHandler
-                0x00000000080093f0                UART3_IRQHandler
-                0x00000000080093f0                QSPI_IRQHandler
-                0x00000000080093f0                DMA1_IRQHandler
- *fill*         0x00000000080093f2        0x2 
- .text.startup  0x00000000080093f4       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x0000000008009410        0x2 out/startup_cm4.o
+                0x0000000008009410                SCC_IRQHandler
+                0x0000000008009410                TIMER2_IRQHandler
+                0x0000000008009410                EFC_IRQHandler
+                0x0000000008009410                I2C0_IRQHandler
+                0x0000000008009410                SAC_IRQHandler
+                0x0000000008009410                I2C1_IRQHandler
+                0x0000000008009410                UART1_IRQHandler
+                0x0000000008009410                BSTIMER0_IRQHandler
+                0x0000000008009410                TIMER3_IRQHandler
+                0x0000000008009410                UART0_IRQHandler
+                0x0000000008009410                SEC_IRQHandler
+                0x0000000008009410                WDG_IRQHandler
+                0x0000000008009410                LPTIMER1_IRQHandler
+                0x0000000008009410                LPTIMER0_IRQHandler
+                0x0000000008009410                SSP0_IRQHandler
+                0x0000000008009410                I2S_IRQHandler
+                0x0000000008009410                I2C2_IRQHandler
+                0x0000000008009410                TIMER0_IRQHandler
+                0x0000000008009410                LCD_IRQHandler
+                0x0000000008009410                LPUART_IRQHandler
+                0x0000000008009410                TIMER1_IRQHandler
+                0x0000000008009410                UART2_IRQHandler
+                0x0000000008009410                Default_Handler
+                0x0000000008009410                ADC_IRQHandler
+                0x0000000008009410                SSP1_IRQHandler
+                0x0000000008009410                DMA0_IRQHandler
+                0x0000000008009410                IWDG_IRQHandler
+                0x0000000008009410                SSP2_IRQHandler
+                0x0000000008009410                BSTIMER1_IRQHandler
+                0x0000000008009410                DAC_IRQHandler
+                0x0000000008009410                AFEC_IRQHandler
+                0x0000000008009410                UART3_IRQHandler
+                0x0000000008009410                QSPI_IRQHandler
+                0x0000000008009410                DMA1_IRQHandler
+ *fill*         0x0000000008009412        0x2 
+ .text.startup  0x0000000008009414       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
  *(.glue_7)
- .glue_7        0x0000000008009408        0x0 linker stubs
+ .glue_7        0x0000000008009428        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008009408        0x0 linker stubs
+ .glue_7t       0x0000000008009428        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008009408        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008009428        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008009408        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008009408                _init
- .init          0x000000000800940c        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x0000000008009428        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008009428                _init
+ .init          0x000000000800942c        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008009414        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008009414                _fini
- .fini          0x0000000008009418        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
-                0x0000000008009420                . = ALIGN (0x4)
-                0x0000000008009420                _etext = .
+ .fini          0x0000000008009434        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008009434                _fini
+ .fini          0x0000000008009438        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
+                0x0000000008009440                . = ALIGN (0x4)
+                0x0000000008009440                _etext = .
 
-.vfp11_veneer   0x0000000008009420        0x0
- .vfp11_veneer  0x0000000008009420        0x0 linker stubs
+.vfp11_veneer   0x0000000008009440        0x0
+ .vfp11_veneer  0x0000000008009440        0x0 linker stubs
 
-.v4_bx          0x0000000008009420        0x0
- .v4_bx         0x0000000008009420        0x0 linker stubs
+.v4_bx          0x0000000008009440        0x0
+ .v4_bx         0x0000000008009440        0x0 linker stubs
 
-.iplt           0x0000000008009420        0x0
- .iplt          0x0000000008009420        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0000000008009440        0x0
+ .iplt          0x0000000008009440        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x0000000008009420      0x3d0
-                0x0000000008009420                . = ALIGN (0x4)
+.rodata         0x0000000008009440      0x428
+                0x0000000008009440                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008009420       0x50 out/printf-stdarg.o
- .rodata        0x0000000008009470        0xc out/tremo_uart.o
- *fill*         0x000000000800947c        0x4 
- .rodata        0x0000000008009480      0x188 out/radio.o
-                0x0000000008009480                FskBandwidths
-                0x0000000008009590                Bandwidths
-                0x000000000800959c                Radio
- .rodata        0x0000000008009608       0x11 out/sx126x.o
- .rodata        0x0000000008009619       0x18 out/rtc-board.o
- .rodata        0x0000000008009631       0x10 out/LoRaMac.o
- *fill*         0x0000000008009641        0x3 
- .rodata        0x0000000008009644       0x67 out/RegionAS923.o
- *fill*         0x00000000080096ab        0x1 
- .rodata        0x00000000080096ac       0x10 /home/hung382/MET/drivers/crypto/lib/libcrypto.a(aes.o)
- .rodata        0x00000000080096bc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
-                0x00000000080096bc                _global_impure_ptr
- .rodata        0x00000000080096c0       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_rint.o)
+ .rodata        0x0000000008009440       0x50 out/printf-stdarg.o
+ .rodata        0x0000000008009490        0xc out/tremo_uart.o
+ *fill*         0x000000000800949c        0x4 
+ .rodata        0x00000000080094a0      0x188 out/radio.o
+                0x00000000080094a0                FskBandwidths
+                0x00000000080095b0                Bandwidths
+                0x00000000080095bc                Radio
+ .rodata        0x0000000008009628       0x11 out/sx126x.o
+ .rodata        0x0000000008009639       0x18 out/rtc-board.o
+ .rodata        0x0000000008009651       0x10 out/LoRaMac.o
+ *fill*         0x0000000008009661        0x3 
+ .rodata        0x0000000008009664       0x67 out/RegionAS923.o
+ *fill*         0x00000000080096cb        0x1 
+ .rodata        0x00000000080096cc       0x10 /home/hung382/MET/drivers/crypto/lib/libcrypto.a(aes.o)
+ .rodata        0x00000000080096dc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
+                0x00000000080096dc                _global_impure_ptr
+ .rodata        0x00000000080096e0       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(lib_a-s_rint.o)
  *(.rodata*)
  .rodata.str1.1
-                0x00000000080096d0      0x105 out/classA.o
+                0x00000000080096f0      0x15f out/classA.o
  .rodata.str1.1
-                0x00000000080097d5       0x19 out/printf-stdarg.o
-                0x00000000080097f0                . = ALIGN (0x4)
- *fill*         0x00000000080097ee        0x2 
+                0x000000000800984f       0x19 out/printf-stdarg.o
+                0x0000000008009868                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00000000080097f0        0x8
-                0x00000000080097f0                __exidx_start = .
+.ARM            0x0000000008009868        0x8
+                0x0000000008009868                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x00000000080097f0        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x00000000080097f8                __exidx_end = .
+ .ARM.exidx     0x0000000008009868        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000008009870                __exidx_end = .
 
-.rel.dyn        0x00000000080097f8        0x0
- .rel.iplt      0x00000000080097f8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008009870        0x0
+ .rel.iplt      0x0000000008009870        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x00000000080097f8        0x0
-                0x00000000080097f8                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008009870        0x0
+                0x0000000008009870                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x00000000080097f8                PROVIDE (__preinit_array_end = .)
+                0x0000000008009870                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000080097f8        0x8
-                0x00000000080097f8                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008009870        0x8
+                0x0000000008009870                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x00000000080097f8        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x0000000008009870        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x00000000080097fc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008009800                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008009874        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008009878                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008009800        0x4
-                0x0000000008009800                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008009878        0x4
+                0x0000000008009878                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008009800        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008009804                PROVIDE (__fini_array_end = .)
-                0x0000000008009804                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008009878        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x000000000800987c                PROVIDE (__fini_array_end = .)
+                0x000000000800987c                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x4b0 load address 0x0000000008009804
+.data           0x0000000020000000      0x4b0 load address 0x000000000800987c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2313,17 +2313,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
                 0x00000000200004b0                _edata = .
 
 .tm_clone_table
-                0x00000000200004b0        0x0 load address 0x0000000008009cb4
+                0x00000000200004b0        0x0 load address 0x0000000008009d2c
  .tm_clone_table
                 0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x00000000200004b0        0x0 load address 0x0000000008009cb4
+.igot.plt       0x00000000200004b0        0x0 load address 0x0000000008009d2c
  .igot.plt      0x00000000200004b0        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x00000000200004b0                . = ALIGN (0x4)
 
-.bss            0x00000000200004b0      0x8c0 load address 0x0000000008009cb4
+.bss            0x00000000200004b0      0x8c0 load address 0x0000000008009d2c
                 0x00000000200004b0                _sbss = .
                 0x00000000200004b0                __bss_start__ = _sbss
  *(.bss)
@@ -2387,7 +2387,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000020000d70                _ebss = .
                 0x0000000020000d70                __bss_end__ = _ebss
 
-.heap           0x0000000020000d70        0x0 load address 0x0000000008009cb4
+.heap           0x0000000020000d70        0x0 load address 0x0000000008009d2c
                 0x0000000020000d70                . = ALIGN (0x4)
                 0x0000000020000d70                _heap_bottom = .
                 0x0000000020000d70                end = _heap_bottom
@@ -2396,7 +2396,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000020000d70                . = (. + _HEAP_SIZE)
                 0x0000000020000d70                _heap_top = .
 
-.stack          0x0000000020000d70     0x1000 load address 0x0000000008009cb4
+.stack          0x0000000020000d70     0x1000 load address 0x0000000008009d2c
                 0x0000000020000d70                . = ALIGN (0x4)
                 0x0000000020000d70                _stack_bottom = .
                 0x0000000020001d70                . = (. + _STACK_SIZE)
@@ -2509,7 +2509,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
                 0x000000000000083b       0x2e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtend.o
  .ARM.attributes
                 0x0000000000000869       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
-OUTPUT(out/lorawan_node_parkinglot.elf elf32-littlearm)
+OUTPUT(out/lorawan_node_parkinglot_slot1.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a
